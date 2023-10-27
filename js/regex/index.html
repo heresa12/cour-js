@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>regex</title>
+    <link rel="stylesheet" href="/regex/style.css">
+    <script src="/regex/script.js" defer></script>
+</head>
+<body>
+     <form id="monFormulaire">
+        <h1>formulaire</h1>
+        <label for="nomUtilisateur">Nom d'utilisateur :</label><br>
+        <input type="text" class="formentre" placeholder="  Entre ton nom d'utilisateur" id="nomUtilisateur" name="nomUtilisateur" required><br><br>
+
+        <label for="telephone">Téléphone :</label><br>
+        <input type="tel" class="formentre" id="telephone" placeholder="  Entre ton numéro de téléphone" name="telephone" required pattern="[0-9]{10}"><br><br>
+
+        <label for="courriel">Email :</label><br>
+        <input type="email" class="formentre" id="courriel" placeholder="  Entre ton mail" name="courriel" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}"><br><br>
+
+        <label for="motDePasse">Mot de passe :</label><br>
+        <input type="password" class="formentre" id="motDePasse" placeholder="  Entre ton mot de passe" name="motDePasse" required><br><br>
+
+        <label for="confirmerMotDePasse">Confirmer mot de passe :</label><br>
+        <input type="password" class="formentre" id="confirmerMotDePasse" placeholder="  Confirmer votre mot De passe" name="confirmerMotDePasse" required><br><br>
+
+
+        
+        <div id="progressContainer">
+            <div id="progressBar"></div>
+        </div>
+
+
+        <div id="forceMotDePasse">
+            <span id="lettre">Une lettre minuscule</span><br>
+            <span id="majuscule">Une lettre majuscule</span><br>
+            <span id="chiffre">Un chiffre</span><br>
+            <span id="caractereSpecial">Un caractère spécial</span><br>
+            <span id="longueur">Au moins 8 caractères</span><br>
+        </div>
+
+        <input type="submit" value="Soumettre">
+    </form>
+   
+    
+</body>
+</html>

@@ -1,0 +1,37 @@
+ #horloge {
+     position: relative;
+     height: 300px;
+     width: 300px;
+     border-radius: 150px;
+     margin: 0 auto;
+     margin-top: 180px;
+ }
+ body {background-color: #c1c19a;}
+  #horloge img {
+     height: 300px;
+     width: 300px;
+     border: 5px solid #f61067;
+     border-radius: 50%;
+ }
+ #heures {
+     width: 80px;
+     height: 5px;
+     background-color: purple;
+ }
+ #minutes {
+     width: 140px;
+     height: 4px;
+     background-color: red;
+ }
+ #secondes {
+     width: 140px;
+     height: 2px;
+     background-color: chartreuse;
+ }
+ #heures,#minutes, #secondes {
+     transform-origin: left center;
+     position: absolute;
+     top: 150px;
+     left: 150px;
+ }
+ 
